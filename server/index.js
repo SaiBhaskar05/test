@@ -9,7 +9,7 @@ const startServer = async () => {
         const cors = require('cors');
         app.use(cors(
             {
-                origin:["https://deploy-mern-1whq.vercel.app"],
+                origin:["https://test-two-lac-40.vercel.app"],
                 methods:["POST","GET"],
                 credentials: true
             }
