@@ -21,10 +21,11 @@ const startServer = async () => {
         
         // GET: Retrieve all items (users)
         app.get('/', async (req, res) => {
+            res.json("Hello");
             try {
                 const items = await Item.find();
                 res.json({ items });
-                res.json("Hello");
+                
             } catch (error) {
                 res.status(500).json({ message: 'Failed to fetch items' });
             }
