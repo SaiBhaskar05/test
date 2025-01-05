@@ -24,6 +24,7 @@ const startServer = async () => {
             try {
                 const items = await Item.find();
                 res.json({ items });
+                res.json("Hello");
             } catch (error) {
                 res.status(500).json({ message: 'Failed to fetch items' });
             }
