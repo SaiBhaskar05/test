@@ -1,13 +1,20 @@
 const express = require('express');
 const connectDB = require('./db.js');
 const Item = require('./models/item.js'); // Item model
+const mongoose=require('mongoose');
 
 const startServer = async () => {
     try {
         const app = express();
         const cors = require('cors');
+        app.use(cors(
+            {
+                origin:["https://deploy-mern-1whq.vercel.app"],
+                methods:["POST","GET"],
+                credentials: true
+            }
+        ));
         app.use(express.json());
-        app.use(cors());
         
         // Connect to MongoDB
         connectDB();
