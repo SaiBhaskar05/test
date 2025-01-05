@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       // Uncomment if you need to externalize dependencies
-      // external: ['react', 'react-dom'], 
+      external: ['axios'], 
     },
   },
 });
