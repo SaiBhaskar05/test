@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .create-group-container {
+    padding: 50px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .create-group-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #7b2cbf;
+  }
+  
+  /* Form Styles */
+  .create-group-container div {
+    margin: 15px 0;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-group-container label {
+    font-size: 1.1rem;
+    color: #3c096c;
+    margin-bottom: 5px;
+  }
+  
+  .create-group-container input,
+  .create-group-container textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .create-group-container input[type="text"],
+  .create-group-container textarea {
+    resize: vertical;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3c096c;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .create-group-container {
+      padding: 20px;
+    }
+  
+  
