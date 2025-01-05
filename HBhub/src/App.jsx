@@ -8,8 +8,16 @@ import ExploreGroups from './components/ExploreGroups';
 import Blog from './components/Blog';
 import CreateGroup from './components/CreateGroup';
 import ChatBox from './components/ChatBox';
+import axios from 'axios'
 
 const AppRoutes = ({ isLoggedIn, setIsLoggedIn, setGroups }) => {
+  axios.defaults.withCredentials=true;
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    axios.post('https://test-two-lac-40.vercel.app')
+    .then(result=>console.log(result))
+    .catch(err=>console.log(err))
+  }
   return (
     <Routes>
       {/* Public routes */}
